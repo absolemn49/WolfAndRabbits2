@@ -1,0 +1,135 @@
+{
+  "maxSlotItems": 6,
+  "items": [
+    {
+      "id": "iron_claws",
+      "nameKey": "shop.item.iron_claws",
+      "icon": "iron_claws",
+      "itemType": "slot",
+      "statType": "attack",
+      "statValue": 15,
+      "cost": 70,
+      "visualTag": "weapon_1"
+    },
+    {
+      "id": "siege_hammer",
+      "nameKey": "shop.item.siege_hammer",
+      "icon": "siege_hammer",
+      "itemType": "slot",
+      "statType": "attack",
+      "statValue": 35,
+      "cost": 150,
+      "visualTag": "weapon_2"
+    },
+    {
+      "id": "fury_gloves",
+      "nameKey": "shop.item.fury_gloves",
+      "icon": "fury_gloves",
+      "itemType": "slot",
+      "statType": "attack_speed_percent",
+      "statValue": 25,
+      "cost": 90,
+      "visualTag": ""
+    },
+    {
+      "id": "swift_boots",
+      "nameKey": "shop.item.swift_boots",
+      "icon": "swift_boots",
+      "itemType": "slot",
+      "statType": "move_speed_percent",
+      "statValue": 18,
+      "cost": 85,
+      "visualTag": "stamina_1"
+    },
+    {
+      "id": "wind_cloak",
+      "nameKey": "shop.item.wind_cloak",
+      "icon": "wind_cloak",
+      "itemType": "slot",
+      "statType": "move_speed_percent",
+      "statValue": 30,
+      "cost": 160,
+      "visualTag": "stamina_2"
+    },
+    {
+      "id": "leather_armor",
+      "nameKey": "shop.item.leather_armor",
+      "icon": "leather_armor",
+      "itemType": "slot",
+      "statType": "armor",
+      "statValue": 4,
+      "cost": 80,
+      "visualTag": "armor_1"
+    },
+    {
+      "id": "iron_armor",
+      "nameKey": "shop.item.iron_armor",
+      "icon": "iron_armor",
+      "itemType": "slot",
+      "statType": "armor",
+      "statValue": 8,
+      "cost": 160,
+      "visualTag": "armor_2"
+    },
+    {
+      "id": "vitality_ring",
+      "nameKey": "shop.item.vitality_ring",
+      "icon": "vitality_ring",
+      "itemType": "slot",
+      "statType": "max_hp",
+      "statValue": 120,
+      "cost": 110,
+      "visualTag": ""
+    },
+    {
+      "id": "fruit_attack",
+      "nameKey": "shop.item.fruit_attack",
+      "icon": "fruit_attack",
+      "itemType": "fruit",
+      "statType": "attack",
+      "statValue": 6,
+      "cost": 55,
+      "visualTag": ""
+    },
+    {
+      "id": "fruit_attack_speed",
+      "nameKey": "shop.item.fruit_attack_speed",
+      "icon": "fruit_attack_speed",
+      "itemType": "fruit",
+      "statType": "attack_speed_percent",
+      "statValue": 12,
+      "cost": 60,
+      "visualTag": ""
+    },
+    {
+      "id": "fruit_move_speed",
+      "nameKey": "shop.item.fruit_move_speed",
+      "icon": "fruit_move_speed",
+      "itemType": "fruit",
+      "statType": "move_speed_percent",
+      "statValue": 8,
+      "cost": 60,
+      "visualTag": ""
+    },
+    {
+      "id": "fruit_armor",
+      "nameKey": "shop.item.fruit_armor",
+      "icon": "fruit_armor",
+      "itemType": "fruit",
+      "statType": "armor",
+      "statValue": 2,
+      "cost": 65,
+      "visualTag": ""
+    },
+    {
+      "id": "fruit_hp",
+      "nameKey": "shop.item.fruit_hp",
+      "icon": "fruit_hp",
+      "itemType": "fruit",
+      "statType": "max_hp",
+      "statValue": 45,
+      "cost": 50,
+      "visualTag": ""
+    }
+  ]
+}

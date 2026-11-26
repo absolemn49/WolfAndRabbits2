@@ -1,0 +1,18 @@
+# Exclude git, tests, dist, and local artifacts
+.git
+.gitignore
+.vs
+.vscode
+Server.Tests
+dist
+deploy
+README.md
+docker-compose*.yml
+
+# Exclude local Server build artifacts
+Server/bin
+Server/obj
+Server/*.bat
+
+# Exclude Unity Client project (WebGL build is already inside Server/wwwroot)
+Client

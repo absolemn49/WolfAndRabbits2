@@ -1,0 +1,9 @@
+{
+  "devHost": "localhost",
+  "devPort": 5000,
+  "devUseTls": false,
+  "releaseHost": "localhost",
+  "releasePort": 80,
+  "releaseUseTls": false,
+  "wsPath": "/ws"
+}

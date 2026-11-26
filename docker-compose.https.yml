@@ -1,0 +1,42 @@
+# Optional HTTPS stack with automatic Let's Encrypt SSL via Caddy.
+# Usage on Ubuntu VPS (requires DNS A record pointing your domain to the VPS IP):
+#   DOMAIN=game.yourdomain.com docker compose -f docker-compose.https.yml up -d
+services:
+  game:
+    image: wolf-and-rabbits:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wolf-and-rabbits
+    restart: unless-stopped
+    expose:
+      - "8080"
+    environment:
+      - GAME_ENV=Release
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: wolf-and-rabbits-caddy
+    restart: unless-stopped
+    depends_on:
+      - game
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DOMAIN=${DOMAIN:?Set DOMAIN env var, e.g. DOMAIN=game.yourdomain.com}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
